@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Charmi Mehta's website">
+    <meta name="keywords" content="website, portfolio, Charmi Mehta">
+    <title>Charmi Mehta | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <header>
+      <div class="container">
+        <div id="branding">
+          <a class = "name-link" href="index.html">Charmi Mehta</a>
+            <div id ="highlight1">Business Analyst <span class = "highlight2">|</span> UX Enthusiast</div>
+        </div>
+        <nav>
+          <ul>
+            <li class = "current"><a href="index.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    
+    <section id="project">
+      <div class="container">
+        <img src="images/diningKPIs/diningKPIscoverpage.png">
+      </div>
+    </section>
+
+
+    <section id="blockquotes">
+      <div class="container">
+        <div class = "block">
+         <p>"Create Tableau dashboards to assess the Key Performance Indicators for the dining management team and measure the operational performance values compared to the budget and industry benchmarks."</p>
+          </div>
+      </div>
+    </section>
+    
+
+    <section id ="projectcontent">
+    <div class = "container">
+           <div id ="projectheader">
+            <p>Introduction</p>
+            </div>
+            
+            <div class="content">
+            <p>
+              This project was part of my Business Intelligence coursework INFO 4940 supervised by Prof. Jeff Christen at Cornell during Fall 2016. </br></br>
+            <span class="proj-high">Cornell Dining</span>
+             is a $54M business with 10 All You Care To Eat dining facilities, 15 retail cafés, 4 retail coffee shops, 2 full service convenience stores and 2 catering service operations. There are 7 members of the management team who are ultimately responsible for making sure these businesses are operationally sound. This includes managing menus, employees, purchases including food and supplies, and attending strategic meetings. Ad hoc managerial reporting is essential to this team when making important business decisions. 
+            In 2011 the university migrated to a new financial system. While the new technology enhanced transactional accuracy and efficiency, the reporting system, that had been personalized to meet each department’s needs, had to be completely re- created. In 2016, departments are still working on re-creating and re-building the managerial reports that are essential to assessing day-to-day operations. Currently, many of the managerial reports that dining uses are still pulled together manually – either daily or monthly.</br></br>
+
+            The report that we worked on is a tool that the dining management team will use to help assess the Key Performance Indicators (KPI’s) in the food industry to help measure operational performance compared to budget and, in some instances, industry benchmarks. These monthly metrics will let the management team assess the effect of any operational changes that they’ve made during the month.
+              </p>
+            </div>
+
+            <div id ="projectheader">
+            <p>Data Source</p>
+            </div>
+            
+            <div class="content">
+            <p>
+         
+            Data to support the KPI’s requested by Dining services comes from four source systems: </br>
+              <ul id="project-bullet">
+                  <li><span class="project-bulletli">University financial data warehouse</span></li>
+                  <li><span class="project-bulletli">Employee hourly time tracking data mart</span></li>
+                  <li><span class="project-bulletli">Dining service’s Point of Sales operational system (Micros)</span></li>
+                  <li><span class="project-bulletli">Budget numbers from a spreadsheet maintained by Dining Services</span></li>
+                  </ul>  
+                  
+              </p>
+            </div>
+
+
+            <div id ="projectheader">
+            <p>Key Performance Indicators</p>
+            </div>
+            
+            <div class="content">
+            <p>
+            <img src="images/diningKPIs/KPIs.png"></br></br>
+            <span class="proj-high">Cost of Goods Sold (COGS) as a % of revenue</span></br>
+            This indicates how effectively an organization is purchasing the supplies directly involved in the creation of products for sale.</br></br>
+
+            <span class="proj-high">Inventory Turns</span></br>
+            This indicates how many times a company’s inventory is sold and replaced over a period of time. This is a good measure of how efficient the organization is with managing inventory and turning product into sales.</br> </br>
+
+            <span class="proj-high">Sales Per Labor Hour</span></br>
+            This indicates how efficiently an organization is at using its labor force to generate sales. This indicator is best used over a period of time and not as a day-to-day indicator. By comparing productive labor hours to the total sales that are generated, the unit can judge if there are too many or too few employees on average.</br></br>
+
+            <span class="proj-high">Average Check</span></br>
+            Comparing the average check to a prior period, likely prior year, is one component to determining whether sales are stronger or weaker than in the past.      
+
+              </p>
+            </div>
+
+
+            <div id ="projectheader">
+            <p>Methodology</p>
+            </div>
+            
+            <div class="content">
+            <p>
+            <img src="images/diningKPIs/process.png">
+              </p>
+            </div>
+
+            <div id ="projectheader">
+            <p>Dimensional Model</p>
+            </div>
+            <div class="content">
+            <p>
+            <img src="images/diningKPIs/dimensionalmodel.png"></br>
+            Financial Fact Table (using WhereScape)
+      
+
+              </p>
+            </div>
+
+            <div id ="projectheader">
+            <p>ETL Phase</p>
+            </div>
+            <div class="content">
+            <p>
+            <img src="images/diningKPIs/dependencydiagram.png"></br>
+            Dependency Diagram Financial Data (using WhereScape)
+      
+
+              </p>
+            </div>
+
+            <div id ="projectheader">
+            <p>ETL Steps</p>
+            </div>
+            <div class="content">
+            <p>
+            <ul id="project-bullet">
+                  <li><span class="project-bulletli">Load the source tables</span></li>
+                    <li><span class="project-bulletli">Create Stage tables (implement the business logic)</span></li>
+                    <li><span class="project-bulletli">Create dimension tables</span></li>
+                    <li><span class="project-bulletli">Create fact tables</span></li>
+                  </ul>  
+                  
+              </p>
+            </div>
+
+
+            <div id ="projectheader">
+            <p>Tableau Dashboards</p>
+            </div>
+            <div class="content">
+            <p>
+            <img src="images/diningKPIs/tableau.png"></br>
+             Tableau screenshots for some of the KPIs</br>
+            (Screenshots are blurred on purpose, so as to avoid revealing the actual insights.)
+      
+
+              </p>
+            </div>
+
+            <div id ="projectheader">
+            <p>e-Portfolio</p>
+            </div>
+            <div class="content">
+            <p>
+            Here is a link to the <a href="https://cornell.digication.com/info_4940_group_2_dining_kpis/Home/" target="_blank">e-Portfolio</a> that we published on the Cornell site, showcasing the entire process we followed for the project along with data insights from the Tableau dashboards.</p>
+
+              </p>
+            </div>
+
+      
+            <div id ="projectheader">
+            <p>Project Team</p>
+            </div>
+            <div class="content">
+            <p>
+              <span class="proj-high">Team members:</span> </br>
+              <a href="about.html">Charmi Mehta</a></br> Suganya Sankaran</br> Trinh Le</br>Jean Maldonado Caizapanta</br> Brendan Larar</br> </br>  
+            </p>
+            </div>
+
+
+
+
+      </div>
+    </section>
+
+
+
+
+
+    <div class="clear"></div>
+
+    <footer>
+      <p>Developed by Charmi Mehta </br>Last updated on April 2017.</p>
+    </footer>
+  </body>
+</html>
